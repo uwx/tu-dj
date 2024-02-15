@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Shaka Player compiled library: -->
+    <script src="dist/shaka-player.compiled.js"></script>
+
+    <!-- Shaka Player ui compiled library default CSS: -->
+    <link rel="stylesheet" type="text/css" href="dist/controls.css">
+
+    <!-- Your application source: -->
+    <script src="myapp-no-ui.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+      }
+        html{
+            height: 100vh;
+        }
+
+        body{
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .wrapper{
+            width: 100%;
+            height: 100%;
+        }
+
+        .wrapper video{
+            height: 100%;
+            width: 100%;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="wrapper youtube-theme">
+      <video id="video"
+            poster="//shaka-player-demo.appspot.com/assets/poster.jpg"
+            autoplay
+            controls></video>
+    </div>
+  </body>
+</html>
